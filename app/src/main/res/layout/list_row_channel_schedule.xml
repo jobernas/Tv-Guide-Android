@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_schedule_height"
+    android:id="@+id/ll_schedule_row_container">
+
+    <TextView
+        android:layout_width="@dimen/row_header_width"
+        android:layout_height="match_parent"
+        android:text="New Text"
+        android:id="@+id/txt_channel_name"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <com.meetme.android.horizontallistview.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_schedule_height"
+        android:id="@+id/hlv_schedule_row" />
+
+
+</LinearLayout>

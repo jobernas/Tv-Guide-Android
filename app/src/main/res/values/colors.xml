@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_schedule_blank_background">#CCC</color>
+    <color name="list_item_schedule_background">#444</color>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/schedule_hour_width"
+    android:layout_height="@dimen/grid_schedule_height"
+    android:id="@+id/ll_schedule_item_container"
+    android:gravity="right"
+    android:rotationY="180">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_schedule_item_name"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_schedule_item_hour"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+</LinearLayout>
