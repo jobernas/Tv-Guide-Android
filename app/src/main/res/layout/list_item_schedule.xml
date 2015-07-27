@@ -5,8 +5,8 @@
     android:layout_width="@dimen/schedule_hour_width"
     android:layout_height="@dimen/grid_schedule_height"
     android:id="@+id/ll_schedule_item_container"
-    android:gravity="right"
-    android:rotationY="180">
+    android:gravity="left"
+    android:padding="5dp">
 
     <TextView
         android:layout_width="wrap_content"

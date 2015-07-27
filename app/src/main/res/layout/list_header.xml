@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/grid_schedule_height"
     android:id="@+id/ll_header_container"
-    android:paddingLeft="@dimen/row_header_width">
+    android:paddingLeft="@dimen/row_header_width"
+    android:background="@color/list_item_schedule_blank_background">
 
     <com.meetme.android.horizontallistview.HorizontalListView
         android:layout_width="match_parent"
