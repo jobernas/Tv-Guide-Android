@@ -12,8 +12,8 @@ Enjoy :)
 
 Screen Shoots
 
-![TV Guide View - Screenshoot 1](/screenshoots/screenshoot1.png?raw=true "Screenshoot 1")
-![TV Guide View - Screenshoot 2](/screenshoots/screenshoot2.png?raw=true "Screenshoot 2")
+![TV Guide View - Screenshoot 1](https://github.com/jobernas/Tv-Guide-Android/blob/master/screenshoots/screenshot1.png "Screenshoot 1")
+![TV Guide View - Screenshoot 2](https://github.com/jobernas/Tv-Guide-Android/blob/master/screenshoots/screenshot2.png "Screenshoot 2")
 
 
 
