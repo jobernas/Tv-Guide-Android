@@ -175,7 +175,7 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
     /**
      * Represents the current scroll state of this view. Needed so we can detect when the state changes so scroll listener can be notified.
      */
-    private OnScrollStateChangedListener.ScrollState mCurrentScrollState = OnScrollStateChangedListener.ScrollState.SCROLL_STATE_IDLE;
+    private OnScrollStateChangedListener.ScrollState mCurrentScrollState = OnScrollStateChangedListener.ScrollState.SCROLL_STATE_INIT;
 
     /**
      * Tracks the state of the left edge glow.
@@ -354,7 +354,7 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
         mCurrentX = 0;
         mNextX = 0;
         mMaxX = Integer.MAX_VALUE;
-        setCurrentScrollState(OnScrollStateChangedListener.ScrollState.SCROLL_STATE_IDLE);
+        setCurrentScrollState(OnScrollStateChangedListener.ScrollState.SCROLL_STATE_INIT);
     }
 
     /** Will re-initialize the HorizontalListView to remove all child views rendered and reset to initial configuration. */
@@ -1217,7 +1217,8 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
      * Interface definition for a callback to be invoked when the view scroll state has changed.
      */
     public interface OnScrollStateChangedListener {
-        public enum ScrollState {
+        enum ScrollState {
+            SCROLL_STATE_INIT,
             /**
              * The view is not scrolling. Note navigating the list using the trackball counts as being
              * in the idle state since these transitions are not animated.
@@ -1242,7 +1243,7 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
          * @param scrollState The current scroll state.
          * @param hlview The Current View
          */
-        public void onScrollStateChanged(HorizontalListView hlview, ScrollState scrollState);
+        void onScrollStateChanged(HorizontalListView hlview, ScrollState scrollState);
     }
 
     /**
